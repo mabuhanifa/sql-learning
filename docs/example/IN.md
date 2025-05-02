@@ -19,3 +19,12 @@ WHERE state IN ("VA","FL","GA");
 ```
 
 This query selects all columns from the `customers` table where the `state` is either "VA", "FL", or "GA". The `IN` operator allows you to specify multiple values in a `WHERE` clause, making it easier to filter rows based on a list of possible values.
+
+```sql
+-- In Keyword
+SELECT *
+FROM products
+WHERE quantity_in_stock IN (49,38,72);
+```
+
+This query selects all columns from the `products` table where the `quantity_in_stock` is either 49, 38, or 72. The `IN` operator allows you to specify multiple values in a `WHERE` clause, making it easier to filter rows based on a list of possible values.
